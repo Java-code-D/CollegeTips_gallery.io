@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CollegeTips Photo Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>CollegeTips Gallery</h1>
+      <p>Experience the awesomeness! Explore our team vibes, creative campaigns, fun moments, and more.</p>
+    </header>
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="team">Team Vibes 🤝</button>
+      <button class="filter-btn" data-filter="creative">Creative Campaigns 🎨</button>
+      <button class="filter-btn" data-filter="fun">Work Hard, Play Hard 🥳</button>
+      <button class="filter-btn" data-filter="bts">Behind-The-Scenes 🎥</button>
+    </div>
+    <div class="gallery">
+      <!-- Team Vibes -->
+      <div class="gallery-item team">
+        <img src="https://www.collegetips.in/images/office-party.jpg" alt="Team Vibes 1">
+        <div class="caption">Team brainstorming session</div>
+      </div>
+      <div class="gallery-item team">
+        <img src="https://www.collegetips.in/images/header-image-2.jpg" alt="Team Vibes 2">
+        <div class="caption">Celebrating a milestone!</div>
+      </div>
+      <!-- Creative Campaigns -->
+      <div class="gallery-item creative">
+        <img src="https://www.collegetips.in/images/header-image-1.jpg" alt="Creative Campaign 1">
+        <div class="caption">Poster design for campus fest</div>
+      </div>
+      <div class="gallery-item creative">
+        <img src="https://www.collegetips.in/images/birthday.jpg" alt="Creative Campaign 2">
+        <div class="caption">Social media campaign shoot</div>
+      </div>
+      <!-- Work Hard, Play Hard -->
+      <div class="gallery-item fun">
+        <img src="https://www.collegetips.in/images/night-party.jpg" alt="Fun 1">
+        <div class="caption">Office party fun!</div>
+      </div>
+      <div class="gallery-item fun">
+        <img src="https://www.collegetips.in/images/lf40.jpeg" alt="Fun 2">
+        <div class="caption">Life Style Classes</div>
+      </div>
+      <!-- Behind-The-Scenes -->
+      <div class="gallery-item bts">
+        <img src="bts1.png" alt="BTS 1">
+        <div class="caption">Filming day chaos</div>
+      </div>
+      <div class="gallery-item bts">
+        <img src="https://www.collegetips.in/images/lf2.jpg" alt="BTS 2">
+        <div class="caption">Editing magic in progress</div>
+      </div>
+      <!-- Add more images and categories as needed -->
+    </div>
+  </div>
+
+  <!-- Fullscreen Modal -->
+  <div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-img">
+    <div id="modal-caption"></div>
+  </div>
+
+  <script src="gallery.js"></script>
+</body>
+</html>
